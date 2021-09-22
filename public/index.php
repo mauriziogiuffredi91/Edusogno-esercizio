@@ -18,7 +18,58 @@
 </head>
 
 <body>
-    <h1>test</h1>
+    <header class="uk-container">
+        <h1>Form section</h1>
+
+    </header>
+    <main>
+        <section class="uk-container">
+            <div class="box-info">
+                <form>
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">Utenti</legend>
+
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Nome">
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Cognome">
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="email">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">Eventi</legend>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Nome evento">
+                        </div>
+
+                        <div class="uk-margin">
+                            <textarea class="uk-textarea" rows="5" placeholder="Descrizione evento"></textarea>
+                        </div>
+
+                        <div class="uk-margin">
+                            <input class="uk-input uk-form-width-small" type="text" placeholder="data">
+                        </div>
+
+                        <div class="uk-margin">
+                            <input class="uk-input uk-form-width-small" type="text" placeholder="ora">
+                        </div>
+                    </fieldset>
+
+
+
+                </form>
+
+
+
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
