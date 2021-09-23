@@ -16,8 +16,12 @@
 
 
 </head>
+<?php
+require_once __DIR__ . './php/connect.php';
+?>
 
 <body>
+
     <header class="uk-container">
         <h1>Form section</h1>
 
@@ -26,7 +30,7 @@
     <main>
         <section class="uk-container">
             <div class="box-info uk-padding">
-                <form action="./php/connect.php" method="post">
+                <form action="index.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Utenti</legend>
@@ -62,7 +66,7 @@
                         </div>
                     </fieldset>
 
-                    <button class="uk-button uk-button-default">Submit</button>
+                    <button type="submit" name="submit" value="submit" class="uk-button uk-button-default">Submit</button>
 
 
 

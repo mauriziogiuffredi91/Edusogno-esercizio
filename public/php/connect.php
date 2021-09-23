@@ -1,26 +1,31 @@
 <?php
-$firstName = $_POST['firstName'];
-$laststName = $_POST['lastName'];
-$email = $_POST['email'];
-$eventName = $_POST['eventName'];
-$eventDesc = $_POST['eventDesc'];
-$eventDate = $_POST['eventDate'];
-$eventTime = $_POST['eventTime'];
-
 //db credentials
 $servername = 'localhost';
 $username = 'root';
 $password = 'root';
 $dbname = 'edu_test';
-//Db conection
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die('Connessione Fallita: ' . $conn->connect_error);
-} else {
-    $stmt = $conn->prepare("insert into utenti(firstName, lastName, email)");
-    $stmt->bind_param("sssssi", $firstName, $laststName, $email, $eventName, $eventDesc, $eventDate, $eventTime);
-    $stmt->execute();
-    echo "registrazione completata :)";
-    $stmt->close();
-    $conn->close();
+
+if (isset($_POST['submit'])) {
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+    $firstName = $_POST['firstName'];
+    $laststName = $_POST['lastName'];
+    $email = $_POST['email'];
+    $eventName = $_POST['eventName'];
+    $eventDesc = $_POST['eventDesc'];
+    $eventDate = $_POST['eventDate'];
+    $eventTime = $_POST['eventTime'];
+
+    $sql = "INSERT INTO utenti (nome, cognome, email) VALUES
+    ('$firstName', '$laststName', '$email')";
+
+    $query = mysqli_query($conn, $sql);
+
+    if ($query) {
+        $sql2 = "INSERT INTO eventi (nome_evento, descrizione_evento, data, ora) VALUES ('$eventName', '$eventDesc', '$eventDate', '$eventTime')";
+        $result = mysqli_query($conn, $sql2);
+        echo 'ok done :)';
+    }
+
+    echo 'Nope lom, riprova';
 }
