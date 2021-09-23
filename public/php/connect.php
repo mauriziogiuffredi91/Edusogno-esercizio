@@ -17,19 +17,14 @@ if (isset($_POST['submit'])) {
     $eventTime = $_POST['eventTime'];
 
 
-
+    /*
     $sql = "INSERT INTO utenti (nome, cognome, email) VALUES
     ('$firstName', '$laststName', '$email')";
-
-    $query = mysqli_query($conn, $sql);
-
-    if ($query) {
-        $sql2 = "INSERT INTO eventi (nome_evento, descrizione_evento, data, ora) VALUES ('$eventName', '$eventDesc', '$eventDate', '$eventTime')";
-        $result = mysqli_query($conn, $sql2);
-        echo 'ok done :)';
-    }
-    var_dump('query:' . $query);
-    var_dump('sql2:' . $sql2);
-
-    echo 'Nope lom, riprova';
+    */
+    $sql2 = "INSERT INTO eventi (nome_evento, descrizione_evento, data, ora) 
+    VALUES ('$eventName', '$eventDesc', '$eventDate', '$eventTime')";
+    /*
+    mysqli_query($conn, $sql);
+    */
+    mysqli_query($conn, $sql2);
 }
