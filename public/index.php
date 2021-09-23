@@ -24,7 +24,7 @@
     </header>
     <main>
         <section class="uk-container">
-            <div class="box-info">
+            <div class="box-info uk-padding">
                 <form>
                     <fieldset class="uk-fieldset">
 
@@ -60,6 +60,8 @@
                             <input class="uk-input uk-form-width-small" type="text" placeholder="ora">
                         </div>
                     </fieldset>
+
+                    <button class="uk-button uk-button-default">Submit</button>
 
 
 
