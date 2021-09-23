@@ -26,19 +26,19 @@
     <main>
         <section class="uk-container">
             <div class="box-info uk-padding">
-                <form>
+                <form action="./php/connect.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Utenti</legend>
 
                         <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Nome">
+                            <input class="uk-input" type="text" placeholder="Nome" id="firstName" name="firstName">
                         </div>
                         <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Cognome">
+                            <input class="uk-input" type="text" placeholder="Cognome" id="lastName" name="lastName">
                         </div>
                         <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="email">
+                            <input class="uk-input" type="text" placeholder="email" id="email" name="email">
                         </div>
                     </fieldset>
 
@@ -46,19 +46,19 @@
 
                         <legend class="uk-legend">Eventi</legend>
                         <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Nome evento">
+                            <input class="uk-input" type="text" placeholder="Nome evento" id="eventName" name="eventName">
                         </div>
 
                         <div class="uk-margin">
-                            <textarea class="uk-textarea" rows="5" placeholder="Descrizione evento"></textarea>
+                            <textarea class="uk-textarea" rows="5" placeholder="Descrizione evento" id="eventDesc" name="eventDesc"></textarea>
                         </div>
 
                         <div class="uk-margin">
-                            <input class="uk-input uk-form-width-small" type="text" placeholder="data">
+                            <input class="uk-input uk-form-width-small" type="text" placeholder="data" id="eventDate" name="eventDate">
                         </div>
 
                         <div class="uk-margin">
-                            <input class="uk-input uk-form-width-small" type="text" placeholder="ora">
+                            <input class="uk-input uk-form-width-small" type="text" placeholder="ora" id="eventTime" name="eventTime">
                         </div>
                     </fieldset>
 
