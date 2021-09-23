@@ -16,6 +16,8 @@ if (isset($_POST['submit'])) {
     $eventDate = $_POST['eventDate'];
     $eventTime = $_POST['eventTime'];
 
+
+
     $sql = "INSERT INTO utenti (nome, cognome, email) VALUES
     ('$firstName', '$laststName', '$email')";
 
@@ -26,6 +28,8 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($conn, $sql2);
         echo 'ok done :)';
     }
+    var_dump('query:' . $query);
+    var_dump('sql2:' . $sql2);
 
     echo 'Nope lom, riprova';
 }
