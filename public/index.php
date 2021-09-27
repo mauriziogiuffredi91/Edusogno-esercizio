@@ -1,5 +1,5 @@
 <?php
-//require_once __DIR__ . '/php/connect.php';
+require_once __DIR__ . '/php/connect.php';
 
 ?>
 
@@ -33,7 +33,7 @@
     <main>
         <section class="uk-container">
             <div class="box-info uk-padding">
-                <form action="./php/connectID.php" method="post">
+                <form action="index.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Utenti</legend>
@@ -48,10 +48,14 @@
                             <input class="uk-input" type="text" placeholder="email" id="email" name="email">
                         </div>
                     </fieldset>
-                    <button type="submit" name="submit" value="submit" class="uk-button uk-button-default">Submit</button>
-                </form>
 
-                <form action="./php/connectEvent.php" method="post">
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">macchine</legend>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Cars model" id="carName" name="carName">
+                        </div>
+                    </fieldset>
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Eventi</legend>
@@ -63,18 +67,19 @@
                             <textarea class="uk-textarea" rows="5" placeholder="Descrizione evento" id="eventDesc" name="eventDesc"></textarea>
                         </div>
 
-                        <div class="uk-margin">
+                        <!-- <div class="uk-margin">
                             <input class="uk-input uk-form-width-small" type="text" placeholder="data" id="eventDate" name="eventDate">
                         </div>
-
+    
                         <div class="uk-margin">
                             <input class="uk-input uk-form-width-small" type="text" placeholder="ora" id="eventTime" name="eventTime">
-                        </div>
+                        </div> -->
                     </fieldset>
-
                     <button type="submit" name="submit" value="submit" class="uk-button uk-button-default">Submit</button>
-
                 </form>
+
+
+
 
 
 
