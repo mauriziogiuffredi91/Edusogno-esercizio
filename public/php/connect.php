@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $lastName = $_POST['lastName'];
     $email =  $_POST['email'];
 
-    $machine = $_POST['carName'];
+    //$machine = $_POST['carName'];
     $eventName = $_POST['eventName'];
     $eventDesc = $_POST['eventDesc'];
 
@@ -32,8 +32,10 @@ if (isset($_POST['submit'])) {
     $sql2 = "INSERT INTO eventi (eventoName, descEvento) VALUES ('$eventName', '$eventDesc')";
     mysqli_query($conn, $sql2);
 
+    /*
     $sql3 = "INSERT INTO cars (cars) VALUES ('$machine')";
     mysqli_query($conn, $sql3);
+    */
 }
 
 /*

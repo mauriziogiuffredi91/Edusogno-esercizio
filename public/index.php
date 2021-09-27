@@ -49,13 +49,13 @@ require_once __DIR__ . '/php/connect.php';
                         </div>
                     </fieldset>
 
-                    <fieldset class="uk-fieldset">
+                    <!-- <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">macchine</legend>
                         <div class="uk-margin">
                             <input class="uk-input" type="text" placeholder="Cars model" id="carName" name="carName">
                         </div>
-                    </fieldset>
+                    </fieldset> -->
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Eventi</legend>
