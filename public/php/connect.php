@@ -32,4 +32,4 @@ if (isset($_POST['submit'])) {
     mysqli_query($conn, $sql2);
 }
 
-$conn->close();
+//$conn->close();

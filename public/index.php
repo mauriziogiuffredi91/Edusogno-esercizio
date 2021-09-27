@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/php/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +20,9 @@
 
 
 </head>
-<?php
-require_once __DIR__ . './php/connect.php';
-?>
 
 <body>
+
 
     <header class="uk-container">
         <h1>Form section</h1>
@@ -30,7 +32,7 @@ require_once __DIR__ . './php/connect.php';
     <main>
         <section class="uk-container">
             <div class="box-info uk-padding">
-                <form action="index.php" method="post">
+                <form action="./php/connect.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Utenti</legend>
