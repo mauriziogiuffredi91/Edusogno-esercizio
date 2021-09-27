@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/php/connect.php';
+//require_once __DIR__ . '/php/connect.php';
 
 ?>
 
@@ -33,7 +33,7 @@ require_once __DIR__ . '/php/connect.php';
     <main>
         <section class="uk-container">
             <div class="box-info uk-padding">
-                <form action="index.php" method="post">
+                <form action="./php/connectID.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Utenti</legend>
@@ -48,10 +48,10 @@ require_once __DIR__ . '/php/connect.php';
                             <input class="uk-input" type="text" placeholder="email" id="email" name="email">
                         </div>
                     </fieldset>
-                    <button type="submit" name="submit1" value="submit1" class="uk-button uk-button-default">Submit</button>
+                    <button type="submit" name="submit" value="submit" class="uk-button uk-button-default">Submit</button>
                 </form>
 
-                <form action="index.php" method="post">
+                <form action="./php/connectEvent.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Eventi</legend>
@@ -72,7 +72,7 @@ require_once __DIR__ . '/php/connect.php';
                         </div>
                     </fieldset>
 
-                    <button type="submit" name="submit2" value="submit2" class="uk-button uk-button-default">Submit</button>
+                    <button type="submit" name="submit" value="submit" class="uk-button uk-button-default">Submit</button>
 
                 </form>
 
