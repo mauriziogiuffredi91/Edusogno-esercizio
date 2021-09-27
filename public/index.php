@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/php/connect.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +33,7 @@ require_once __DIR__ . '/php/connect.php';
     <main>
         <section class="uk-container">
             <div class="box-info uk-padding">
-                <form action="./php/connect.php" method="post">
+                <form action="index.php" method="post">
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Utenti</legend>
